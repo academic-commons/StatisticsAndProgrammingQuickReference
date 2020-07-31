@@ -1,0 +1,4 @@
+- label: Python Menu
+  items:
+    - name: Python Home
+      link: /python/

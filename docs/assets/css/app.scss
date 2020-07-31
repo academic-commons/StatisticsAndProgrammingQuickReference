@@ -1,0 +1,28 @@
+---
+---
+// to change the navigation bar color
+$primary: #800604;
+
+// Import Main CSS file from theme
+@import "main";
+
+// to left align the code snippets
+figure.highlight {
+	text-align: left;
+}
+
+// Bold face the Brand name
+.navbar-brand{
+	font-weight: bold;
+}
+
+// menubar width
+.column.is-4-desktop {
+    width: 21.333333%;
+}
+
+
+// menu bar active selection
+.menu-list a.is-active {
+    background-color: #4a4a4a4a;
+}

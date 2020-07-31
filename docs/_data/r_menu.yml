@@ -1,0 +1,38 @@
+- label: R Menu
+  items:
+    - name: R Home
+      link: /r/
+- label: Plotting Charts
+  items:
+    - name: Scatter plot
+      link: /r/Plotting_Charts/Scatter_plot/home
+    - name: Facet Charts
+      link: /r/Plotting_Charts/Facet_charts/home
+    - name: Bar Graph
+      link: /r/Plotting_Charts/bar_graph/home
+    - name: Combine many graphs in same chart
+      link: /r/Plotting_Charts/combine_many_graphs_in_same_chart/home
+    - name: Plotting Miscellaneous
+      link: /r/Plotting_Charts/Plotting_Miscellaneous/home
+
+- label: Data Transformations
+  items:
+    - name: Filter Rows
+      link: /r/data_transformation/filter_rows/home
+    - name: Sort Rows
+      link: /r/data_transformation/sort_rows/home
+    - name: Select Columns
+      link: /r/data_transformation/select_columns/home
+    - name: Rename Columns
+      link: /r/data_transformation/rename_columns/home
+    - name: Rearrange Columns
+      link: /r/data_transformation/rearrange_columns/home
+    - name: Adding new columns using existing data
+      link: /r/data_transformation/adding_new_columns_using_existing_data/home
+    - name: Group by and Summarize data
+      link: /r/data_transformation/group_by_and_summarize_data/home
+
+- label: Miscellaneous R
+  items:
+    - name: Miscellaneous Home
+      link: /r/miscellaneous/home

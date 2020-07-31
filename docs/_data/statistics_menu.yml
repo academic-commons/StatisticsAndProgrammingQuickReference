@@ -1,0 +1,4 @@
+- label: Statistics Menu
+  items:
+    - name: Statistics Home
+      link: /statistics/

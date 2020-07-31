@@ -1,0 +1,90 @@
+---
+title: Search
+description: "Search this site"
+layout: page
+permalink: /search/
+tipue_search_active: true
+exclude_from_search: true
+---
+<head>
+
+	<!--Clean up the search header-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  {% if page.tipue_search_active or layout.tipue_search_active -%}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="{{ "/assets/tipuesearch/tipuesearch_content.js" | relative_url }}"></script>
+  <link rel="stylesheet" href="{{ "/assets/tipuesearch/css/tipuesearch.css" | relative_url }}">
+  <script src="{{ "/assets/tipuesearch/tipuesearch_set.js" | relative_url }}"></script>
+  <script src="{{ "/assets/tipuesearch/tipuesearch.min.js" | relative_url }}"></script>
+  {% endif -%}
+</head>
+
+<form action="{{ page.url | relative_url }}">
+  <div class="box">
+  <select name="drop_down_value" id="drop_down_value">
+	<option value="Select Category">Select Category</option>
+	{% for item in site.data.drop_down_search %}
+	<!-- Based on previous drop down, highlight the existing value in drop down list. -->
+	<option value="{{ item.name | downcase}}">{{ item.name }}</option>
+	{% endfor %}
+  </select>
+  <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required>
+  </div>
+  <div style="clear: both;"></div>
+</form>
+
+<h1>Search Results</h1>
+<div id="tipue_search_content"></div>
+
+
+
+
+<script>
+// function which takes input from form and converts to object
+function searchToObject() {
+  var pairs = window.location.search.substring(1).split("&"),
+    obj = {},
+    pair,
+    i;
+
+  for ( i in pairs ) {
+    if ( pairs[i] === "" ) continue;
+
+    pair = pairs[i].split("=");
+    obj[ decodeURIComponent( pair[0] ) ] = decodeURIComponent( pair[1] );
+  }
+
+  return obj;
+}
+
+$(document).ready(function() {
+  // get query from form as object
+  var query_object = searchToObject();
+  
+  // get the drop_down_value
+  var ddv = query_object["drop_down_value"];
+  
+  // check if ddv is empty or not
+  if (typeof ddv == 'undefined' || ddv=="Select+Category"){
+	ddv = "Select Category";
+  }
+  
+  // set the current value of dropdown to ddv
+  $('#drop_down_value').val(ddv);
+  
+  // call tipusearch function with tiptue_search_input and options set to collection:ddv
+  $('#tipue_search_input').tipuesearch({collection:ddv});
+});
+</script>
+
+

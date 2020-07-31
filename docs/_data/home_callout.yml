@@ -1,0 +1,25 @@
+# style: is-light
+height: is-small
+items:
+  - title: Python
+    subtitle: Coding references related to Python
+    icon_brand: true
+    icon: fa-python
+    call_to_action_name: Python Homepage
+    call_to_action_link: /python/
+    description: Python examples related to plotting, pandas, data strutures, etc
+    
+  - title: R Programming
+    subtitle: Coding references related to R
+    icon_brand: true
+    icon: fa-r-project
+    call_to_action_name: R Homepage
+    call_to_action_link: /r/
+    description: R examples related to plotting, data strutures, tidyverse, etc
+    
+  - title: Statistics
+    subtitle: Statistical Concepts
+    icon: fa-chart-area
+    call_to_action_name: Statistics Homepage
+    call_to_action_link: /statistics/
+    description: Statistical examples and statistical tests implemented in Python and R
