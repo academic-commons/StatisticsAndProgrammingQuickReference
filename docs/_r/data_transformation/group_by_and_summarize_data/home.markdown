@@ -13,3 +13,4 @@ exclude_from_search: true
 - [Group by Multiple Variables]({{"/r/data_transformation/group_by_and_summarize_data/Group by Multiple Variables"|prepend:site.baseurl}})
 - [Dealing with NA values while summarizing]({{"/r/data_transformation/group_by_and_summarize_data/Dealing with NA values while summarizing"|prepend:site.baseurl}})
 - [Various Summarization Functions]({{"/r/data_transformation/group_by_and_summarize_data/Various Summarization Functions"|prepend:site.baseurl}})
+- [Grouped Filters and Mutates]({{"/r/data_transformation/group_by_and_summarize_data/Grouped Filters and Mutates"|prepend:site.baseurl}})
