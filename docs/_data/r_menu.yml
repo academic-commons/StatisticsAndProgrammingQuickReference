@@ -29,8 +29,12 @@
       link: /r/data_transformation/rearrange_columns/home
     - name: Adding new columns using existing data
       link: /r/data_transformation/adding_new_columns_using_existing_data/home
+    - name: Append to existing data
+      link: /r/data_transformation/append_to_existing_data/home
     - name: Group by and Summarize data
       link: /r/data_transformation/group_by_and_summarize_data/home
+    - name: Chain Multiple Operations
+      link: /r/data_transformation/chain_multiple_operations/home
 
 - label: Miscellaneous R
   items:
