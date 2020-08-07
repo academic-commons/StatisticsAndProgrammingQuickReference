@@ -11,9 +11,13 @@ toc: true
 
 ## Introduction	
 
-We can append new rows to existing dataframe in multiple ways - 
+We can append new rows to existing dataframe using the **rbind** function. The syntax for rbind is as follows:
 
+```
+rbind(existing_dataframe, dataframe_to_append)
+```
 
+**The rbind operation does not modify the current input, instead it returns a new dataframe which is a result of the operation performed.**
 
 ## Procedure
 
@@ -40,21 +44,21 @@ We will append a new row with values 6 and 16.
 
 {% highlight r %} 
 # refer procedure for definition of df
-library(dplyr)
+library(tibble)
 
-# add new column to dataframe using mutate
-result <- mutate(df, col3 = c("A","B","C","D","E"))
+# add new row to dataframe using rbind
+result <- rbind(df, tibble(col1 = c(6), col2 = c(16)))
 View(result)
 {% endhighlight %}
 
 The output of above code is:
 
-![append new column](append new column.png)
+![append new row](append new row.png)
 
 
 ## Conclusion
 
-Thus we have successfully appended new column to existing dataframe.
+Thus we have successfully appended new row to existing dataframe.
 
 ## References
 
