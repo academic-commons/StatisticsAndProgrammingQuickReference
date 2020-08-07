@@ -16,7 +16,7 @@ Filter in tidyverse allows you to subset dataframe based on specified conditions
 filter(<dataframe>, <conditions>)
 ```
 
-filter() only includes rows where the condition is TRUE; it excludes both FALSE and [NA]({{"/r/data_transformation/filter_rows/"|prepend:site.baseurl}}) values. **The operation of filtering does not modify the current input, instead it returns a new dataframe which is a result of the operation performed.**
+filter() only includes rows where the condition is TRUE; it excludes both FALSE and [NA]({{"/r/miscellaneous/Missing Values or NAs"|prepend:site.baseurl}}) values. **The operation of filtering does not modify the current input, instead it returns a new dataframe which is a result of the operation performed.**
 
 ## Procedure
 

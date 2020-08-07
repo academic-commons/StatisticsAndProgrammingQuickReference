@@ -11,7 +11,7 @@ toc: true
 
 ## Introduction	
 
-*NA* are missing values or not applicable columns in data. You can read more about NA [here](). We need to handle the NA values before summarizing or else the summarized outputs will be NA as well. 
+*NA* are missing values or not applicable columns in data. You can read more about NA [here]({{"/r/miscellaneous/Missing Values or NAs"|prepend:site.baseurl}}). We need to handle the NA values before summarizing or else the summarized outputs will be NA as well. 
 
 We set the **na.rm** argument to TRUE while summarizing. By setting this argument we remove all the NA values from our dataframe and then perform summarization function.
 

@@ -20,7 +20,7 @@ arrange(<dataframe>, <columns>)
 
 When we specify multiple columns the rows are sorted based on the columns specified in that order. If 2 rows have the same value for a column, then the **tie is broken** by checking the next column values.
 
-All the missing values or [NA]() values are placed at the end.
+All the missing values or [NA]({{"/r/miscellaneous/Missing Values or NAs"|prepend:site.baseurl}}) values are placed at the end.
 
 
 ## Procedure
