@@ -10,6 +10,10 @@
       link: /r/Plotting_Charts/Facet_charts/home
     - name: Bar Graph
       link: /r/Plotting_Charts/bar_graph/home
+    - name: Boxplot
+      link: /r/Plotting_Charts/boxplot/home
+    - name: Heatmap
+      link: /r/Plotting_Charts/heatmap/home
     - name: Combine many graphs in same chart
       link: /r/Plotting_Charts/combine_many_graphs_in_same_chart/home
     - name: Plotting Miscellaneous
