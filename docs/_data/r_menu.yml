@@ -19,6 +19,15 @@
     - name: Plotting Miscellaneous
       link: /r/Plotting_Charts/Plotting_Miscellaneous/home
 
+- label: Dataframe or Tibbles
+  items:
+    - name: Creating Dataframes or Tibbles
+      link: /r/dataframe_or_tibbles/creating_dataframes_or_tibbles/home
+    - name: Printing Dataframes or Tibbles
+      link: /r/dataframe_or_tibbles/printing_dataframes_or_tibbles/home
+    - name: Subsetting Dataframes or Tibbles
+      link: /r/dataframe_or_tibbles/subsetting_dataframes_or_tibbles/home
+
 - label: Data Transformations
   items:
     - name: Filter Rows
