@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Template
-permalink: /template/
+title: Markdown Lookup
 exclude_from_search: true
 ---
 
-# Template
+# Markdown Lookup
 
 ------------------------------------------------------
 
