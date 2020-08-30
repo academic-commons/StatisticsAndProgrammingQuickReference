@@ -1,17 +1,17 @@
 ---
 layout: page
-title: Basic of subsetting dataframe
+title: Select single column in a dataframe by position
 menubar: r_menu
 toc: true
 ---
 
-# Basic of subsetting dataframe
+# Select single column in a dataframe by position
 
 -------------------------------------------------------------------
 
 ## Introduction
 
-We have covered basics of dataframe or tibble [here]({{"/r/dataframe_or_tibbles/creating_dataframes_or_tibbles/Creating Basic Dataframe or Tibble"|prepend:site.baseurl}}). If we only want to select single column of tibble for further processing we use the **$** operator.
+We have covered basics of subsetting tibble [here]({{"/r/dataframe_or_tibbles/subsetting_dataframes_or_tibbles/Select single column in a dataframe"|prepend:site.baseurl}}). If we only want to select single column of tibble for further processing using position we use the **[[]]** operator.
 
 ## Procedure
 
@@ -33,22 +33,22 @@ The tibble contains the following data:
 
 ![basic tibble](basic tibble.png)
 
-We will select the Alias Name column.
+We will select the 2nd column.
 
 ### Code
 
 {% highlight r %} 
 # refer procedure for definition of basic_tibble
-View(basic_tibble$`Alias Name`)
+View(basic_tibble[[2]])
 {% endhighlight %}
 
 The output of above code is:
 
-![alias](alias.png)
+![position](position.png)
 
 ## Conclusion
 
-Thus we have successfully covered basics of subsetting a tibble.
+Thus we have successfully covered selecting single column in a dataframe by position.
 
 ## References
 - https://r4ds.had.co.nz/
