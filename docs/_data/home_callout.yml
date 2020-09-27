@@ -23,3 +23,11 @@ items:
     call_to_action_name: Statistics Homepage
     call_to_action_link: /statistics/
     description: Statistical examples and statistical tests implemented in Python and R
+    
+  - title: Probability
+    subtitle: Probability Concepts
+    icon_brand: false
+    icon: fa-dice
+    call_to_action_name: Probability Homepage
+    call_to_action_link: /probability/
+    description: Probability concepts for Timeseries Analysis and Modelling Class
