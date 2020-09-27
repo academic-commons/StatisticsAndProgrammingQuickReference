@@ -34,7 +34,7 @@ theme: bulma-clean-theme
 tipue_search:
   include:
     pages: true
-    collections: [python, r, statistics]
+    collections: [python, r, statistics, probability]
   exclude:
     files: [index.md, search.html,404.html]
 
@@ -77,6 +77,8 @@ collections:
     r:
      output: true
     statistics:
+     output: true
+    probability:
      output: true
      
      
